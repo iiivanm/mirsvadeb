@@ -1,0 +1,584 @@
+/*
+==============================
+    1. Global
+    2. Top Bar
+    3. Navigation
+    4. carousel
+    5. Clientel
+    6. Progress Button
+    7. Promo
+    8. Footer
+    9. Services
+    10. Porfolio
+=============================
+*/
+
+
+/*
+    1. Global
+=============================
+*/
+@font-face {
+  font-family: 'Marianna';
+  src: url('../fonts/fontFace/Marianna.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aidine Kirnberb';
+  src: url('../fonts/fontFace/Adine_Kirnberg.ttf')  format('truetype');
+}
+.container {
+  max-width: 1000px;
+}
+html{
+  font-size: 16px;
+}
+
+a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  color: #999;
+}
+p,ul, ol{
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.line-seperator {
+  border-bottom: 1px solid #ccc;
+  padding-top: 5px;
+
+}
+.line-seperator-wrapper {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/*
+    2. Top Bar
+=============================
+*/
+.top-bar {
+  margin: 20px 0 -10px  0;
+}
+.top-bar-phone {
+  padding-left: 150px;
+}
+.top-bar-social {
+  padding-right: 150px;
+}
+
+
+.top-bar-phone span:first-child,
+.top-bar-phone span:nth-child(2){
+  display: block;
+
+  font-family: 'Philosopher', sans-serif;
+    font-size: 0.7em;
+  color:rgb(120, 120, 120);
+}
+.top-bar-phone span:first-child {
+    width: 120%;
+  font-size: 1.4em;
+  margin-top: 50px;
+}
+.top-bar-phone span:nth-child(2){
+  font-size: 1em;
+  margin-top: -5px;
+    text-align: center;
+}
+.top-bar-logo div img{
+  width: 200px;
+  display: table;
+  margin: 0 auto;
+}
+
+.top-bar-social span i{
+  margin-right: 13px;
+  font-size: 1.15em;
+  line-height: 1.3;
+}
+.top-bar-social span i[class="fa fa-facebook"]{
+  margin-right: 18px;
+}
+.top-bar-social span:first-child,
+.top-bar-social span:nth-child(2),
+.top-bar-social span:nth-child(3) {
+  display: block;
+  font-size: 1.23em;
+  color:rgb(120, 120, 120);
+  transition: .25s
+
+}
+.top-bar-social div {
+  display: table;
+  margin:  0 auto;
+}
+.top-bar-social span:first-child {
+  margin-top: 50px;
+}
+.top-bar-social a:hover {
+  color: rgba(120, 120, 120, 0.7);
+  transition: .25s;
+}
+/* ----- Topbar media ----- */
+@media (max-width:767px){
+  .top-bar-phone span:first-child {
+    margin-top: 10px;
+  }
+  .top-bar-logo div img{
+    width: 100px;
+  }
+}
+@media  (max-width : 1199px) {
+  .top-bar-phone {
+    padding-left: 0;
+  }
+  .top-bar-social {
+    padding-right: 0;
+  }
+  .top-bar-phone span:first-child,
+  .top-bar-phone span:nth-child(2){
+    font-size: 0.9em;
+  }
+  .top-bar-phone {
+    padding-left: 0;
+  }
+  .top-bar-social {
+    padding-right: 0;
+  }
+}
+/*
+    3. Navigation
+=============================
+*/
+.flex-nav-container {
+  display: flex;
+
+}
+.flex-nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  padding-left: 0!important;
+}
+.flex-nav li a {
+  font-family: 'Philosopher', sans-serif;
+  font-size: .9em;
+  margin-right: -10px;
+  transition: .25s;
+  color: rgb(120, 120, 120);
+}
+.flex-nav li a:hover {
+  color: rgba(120, 120, 120, 0.7);
+
+}
+.flex-nav li {
+  list-style: none;
+}
+.flex-nav li {
+
+}
+.flex-nav li  {
+  padding: 0 35px;
+  padding-top: 5px;
+
+}
+
+.flex-nav > li:last-child {
+  border: none;
+}
+
+
+.mobile-nav {
+  border: none;
+  width: 100%;
+}
+.mobile-nav-container {
+  width: 200px;
+  float: none!important;
+  margin: auto;
+
+}
+.mobile-nav:hover,
+.mobile-nav:active {
+  background-color: #fff;
+}
+/* ----- Navigation media ----- */
+@media  (max-width : 1199px) {
+  .flex-nav{
+      width: 100%;
+  }
+}
+@media  (max-width : 990px) {
+  .flex-nav li  {
+    padding: 0 25px;
+    padding-top: 5px
+  }
+  .flex-nav li  {
+    margin-right: -10px;
+  }
+}
+
+
+/*
+    4. Carousel
+=============================
+*/
+
+#main-slider {
+  width: 100%;
+}
+/* ----- Fadign effect ----- */
+.carousel.item {
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -ms-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition:
+  opacity 3s;
+}
+.carousel.active.left {
+  left:0;
+  opacity:0;
+  z-index:2;
+}
+.carousel.next {
+  left:0;
+  opacity:1;
+  z-index:1;
+}
+
+.carousel-bottom{
+  background-color: #F7CAC9;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+.welcome-container {
+  display: block;
+
+  font-size: 7em;
+  text-align: center;
+}
+.welcome-container > span {
+  font-family: "Aidine Kirnberb";
+}
+.welcome-container span + span {
+  font-family: "Marianna";
+}
+
+/*
+    5. Clientel
+=============================
+*/
+.clientel-container {
+  margin-top: 100px;
+}
+.clientel-thumb img {
+  max-width: 100%;
+
+}
+.clientel-thumb {
+	margin-bottom: 30px;
+}
+.clientel-thumb p {
+
+  text-align: center;
+  font-size: 1.7em;
+  padding-bottom: 10px;
+  display: block;
+  font-family: 'Philosopher', sans-serif;
+
+
+}
+
+.ajax-button {
+	margin-bottom: 30px;
+}
+
+/*
+    6. Progress Button
+=============================
+*/
+.progress-button-container{
+  display: flex;
+}
+.progress-button {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+  outline: none;
+  border: none;
+  color: rgb(100, 100, 100);/*text color*/
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  line-height: 4;
+  display: flex;
+  align-self: center;
+  margin-bottom: 50px;
+}
+.progress-button .content {
+  position: relative;
+  display: block;
+}
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+  opacity: 1;
+}
+.progress-button .progress {
+  background: #ccc;/* background progress bar */
+}
+.progress-button .progress-inner {
+  position: absolute;
+  left: 0;
+  background: #828282;/*progress bar*/
+}
+.progress-button[data-horizontal] .progress-inner {
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transition: width 0.3s, opacity 0.3s;
+  transition: width 0.3s, opacity 0.3s;
+}
+.progress-button[data-perspective] {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  -webkit-perspective: 900px;
+  perspective: 900px;
+}
+.progress-button[data-perspective] .content {
+  padding: 0 60px;
+  background: #c7c7c7;/*background button*/
+}
+.progress-button[data-perspective] .progress-wrap {
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+  outline: 1px solid rgba(0, 0, 0, 0);
+}
+.progress-button[data-style="rotate-side-up"] .progress {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.progress-button[data-style="rotate-side-up"].state-loading .progress-wrap {
+  -webkit-transform: rotateX(-90deg) translateZ(10px);
+  transform: rotateX(-90deg) translateZ(10px);
+}
+
+/*
+    7. Promo
+=============================
+*/
+.p-promo {
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+.ol-promo {
+  width: 95%;
+  margin: auto;
+  font-size: 120%;
+  padding-bottom: 20px;
+
+}
+.img-promo {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.h2-promo {
+  margin-bottom: 50px;
+}
+.instagram-widget-header {
+  background-color: #eee;
+  margin-bottom: 0;
+}
+.instagram-widget-body {
+  background-color: #f7cac9;
+
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.h2-instagram {
+  padding-top: 30px;
+  font-family: 'Marianna';
+  font-size: 7em;
+}
+
+.us-promo {
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+/*
+    8. Footter
+=============================
+*/
+
+.footter-top{
+  background: #e8ded2;
+}
+.navigation {
+  margin-left: 50px;
+}
+.navigation h4 {
+  color: black;
+  font-size: 150%;
+}
+.navigation ul{
+  list-style: none;
+  padding-top: 10px;
+}
+.navigation ul li{
+  font-size: 120%;
+  font-weight: 100;
+}
+.social p{
+  font-size: 120%;
+}
+.social ul {
+  padding-top: 10px;
+  margin-bottom: 80px;
+}
+.social ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 170%;
+}
+.footter-info span,
+.footter-info i{
+  font-size: 140%;
+}
+.footter-info i {
+  padding-right: 20px;
+}
+.footter-info div {
+  padding-bottom: 7px;
+}
+.footter-bottom p {
+  text-align: center;
+  padding:20px 0 17px 0;
+  color:cornsilk;
+
+}
+.footter-bottom {
+  background-color: #000;
+}
+
+/*
+    9.  Services
+=============================
+*/
+.service-item {
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 7%;
+
+}
+.service-item img,
+.service-item span{
+  padding: 10px;
+}
+.service-item span {
+  font-size: 160%;
+  font-weight: 100;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.shortline {
+  border-bottom: 1px solid #ccc;
+  width: 33%;
+  margin: auto;
+  padding-top: 13px;
+
+}
+.medium-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+
+
+}
+/*
+10. portfolio
+=============================
+*/
+
+.border-box {
+	border: 1px solid #ccc;
+    padding: 15px 0px;
+}
+
+.couples-gerb {
+	margin:  45% 0 30%;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.couples-gerb span {
+    font-size: 3rem;
+    font-family: "Marianna";
+}
+
+.shot-line-portfolio-description {
+	text-align: center;
+    font-weight: 100;
+    margin-top:  7px;
+}
+.name-banner {
+    background: #F7CAC9;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-top: 10px;
+}
+.name-banner h2 {
+    margin-top: -10px!important;
+    padding-top: 30px;
+	color: black !important;
+
+}
+.single-portolio-main-desc {
+    width: 80%;
+    text-align: center;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+.contributors {
+    text-align: center;
+    color: #c7c7c7
+}
+.couples-desc-text {
+	width: 80%;
+    margin: 60% auto ;
+}
