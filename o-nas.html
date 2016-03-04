@@ -1,0 +1,312 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Philosopher:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+
+
+    <script src="js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!--
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#load").click(function(){
+                $("#ajax").load("more.html");
+            });
+        });
+    </script>
+-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+                $("#ajax").load("ajax-load.html");
+
+        });
+    </script>
+</head>
+
+    <script language="javascript">
+        function clearData(){
+            window.clipboardData.setData('text','')
+        }
+        function cldata(){
+            if(clipboardData){
+                clipboardData.clearData();
+            }
+        }
+        setInterval("cldata();", 1000);
+    </script>
+
+
+    <body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="clearData();" onblur="clearData();">
+    <!-- Tob Bar -->
+    <div class="container">
+
+        <div class="row top-bar">
+            <!-- phone row -->
+            <div class="col-sm-4 top-bar-phone">
+
+
+                <span>+380 095 251 0228
+                  <br>+380 093 166 6863
+
+        </span>
+                <span>welcome@mirsvadeb.net.ua</span>
+            </div>
+            <!-- logo row -->
+            <div class="col-sm-4 top-bar-logo center-block">
+                <div>
+                    <img src="img/top-bar-logo.png" alt="Мир Свадеб - Свадебное Агенстов в Украине" />
+                </div>
+            </div>
+            <!-- social row -->
+            <div class="col-sm-4 top-bar-social hidden-xs">
+                <div>
+                    <span><a href="#"><i class="fa fa-instagram"></i>instagram</a></span>
+                    <span><a href="#"><i class="fa fa-facebook"></i>instagram</a></span>
+                    <span><a href="#"><i class="fa fa-vk"></i>vk.com</a></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="container">
+
+        <div class="flex-nav-container hidden-xs">
+            <ul class="flex-nav">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="o-nas.html">О НАС</a></li>
+                <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
+                <li><a href="uslugi.html">УСЛУГИ</a></li>
+                <li><a href="blog.html">БЛОГ</a></li>
+                <li><a href="obratnaya-svyaz.html">ОБРАТНАЯ СВЯЗЬ</a></li>
+            </ul>
+        </div>
+
+        <!-- Moblie Nav -->
+        <div class="btn-group hidden-sm hidden-md hidden-lg mobile-nav-container center-block">
+            <button type="button" class="btn btn-default dropdown-toggle  mobile-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Меню
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="o-nas.html">О НАС</a></li>
+                <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
+                <li><a href="uslugi.html">УСЛУГИ</a></li>
+                <li><a href="blog.html">БЛОГ</a></li>
+                <li><a href="obratnaya-svyaz.html">ОБРАТНАЯ СВЯЗЬ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="main-slider" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#main-slider" data-slide-to="1"></li>
+                        <li data-target="#main-slider" data-slide-to="2"></li>
+                        <li data-target="#main-slider" data-slide-to="3"></li>
+                        <li data-target="#main-slider" data-slide-to="4"></li>
+                        <li data-target="#main-slider" data-slide-to="5"></li>
+                        <li data-target="#main-slider" data-slide-to="6"></li>
+
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/our-team/1.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <!--<h3>Caption Text</h3>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/our-team/2.jpg" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/our-team/3.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/our-team/4.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/our-team/5.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/our-team/6.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                      
+                       
+                       
+                        
+                       
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Double line seperator -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="line-seperator-wrapper">
+                    <div class="line-seperator"></div>
+                    <div class="line-seperator"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- promo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="h2-promo">Давайте Познакомимся!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="p-promo">
+                    WEDDING AGENCY MIR SVADEB — это, прежде всего, команда. Команда людей приятных, утонченных, разносторонних, обладающих хорошим чутьем и вкусом, а главное, любящих свое дело и искренне переживающих за результат. Мы предлагаем вам не просто услуги свадебного координатора, ведущего, стилиста, декоратора, фотографа, видеографа – мы создаем полноценную и продуманную концепцию торжества. Обратившись к нам, вы можете быть уверены, что процесс подготовки будет легким и очень комфортным, а ваша свадьба пройдет на самом высоком уровне! Мы знаем, как сделать этот праздник, чтобы в этот день вы не упустили самое главное - вашу любовь.
+                </p>
+                
+            </div>
+        </div>
+
+
+     
+       
+    </div>
+
+    <!-- Instagram widget -->
+    
+
+  
+
+
+
+    <!-- Double line seperator -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="line-seperator-wrapper">
+                    <div class="line-seperator"></div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footter -->
+    <div class="container">
+        <div class="row footter-top">
+            <div class="col-md-12">
+                <img src="img/top-bar-logo.png" class="footter-logo center-block" width="200" />
+            </div>
+        </div>
+        <div class="row footter-top">
+            <div class="col-md-3 navigation">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="o-nas.html">О НАС</a></li>
+                    <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
+                    <li><a href="uslugi.html">УСЛУГИ</a></li>
+                    <li><a href="blog.html">БЛОГ</a></li>
+                    <li><a href="obratnaya-svyaz.html">ОБРАТНАЯ СВЯЗЬ</a></li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-md-3 social">
+                <p>Присоединяйтесь к нам в социальных сетях:</p>
+                <ul>
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <div class="footter-info">
+                    <div>
+                        <i class="fa fa-phone"></i><span>+380 095 251 0228</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i><span>welcome@mirsvadeb.net.ua
+</span>
+                    </div>
+
+                    <div>
+                        <br>
+                        <p>Офис нашего агентства расположен прямо на пересечении Кутузовского проспекта и улицы Дунаевского, в 5 минутах пешком от Кутузовского ЗАГСа, по адресу: ул. Студенческая д.26, вход за кондитерской «Хлеб и Со». До встречи!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footter-bottom">
+
+                <p>© Свадебное агентство Карамель, 2008-2016. Все права защищены. </p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(document).keyup(function(e){
+        if(e.keyCode == 44) return false;
+    });
+        </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://instansive.com/widget/js/instansive.js"></script>
+
+
+</body>
+
+
+</html>
